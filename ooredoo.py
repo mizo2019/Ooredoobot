@@ -11,13 +11,15 @@ import sqlite3
 import datetime 
 import uuid 
 import os
+DBNAME = os.environ.get("DBNAME", "/data/botusers.db")
+import os
 TELEGRAMBOTTOKEN = os.environ["TELEGRAMBOTTOKEN"]
 import base64
 import random
 from datetime import datetime as dt_class
 
 # --- CONFIGURATION ---
-DB_NAME = 'bot_users.db'
+
 
 # --- LOGGING ---
 logger = logging.getLogger(__name__)
