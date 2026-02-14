@@ -3,6 +3,10 @@ primary_region = 'cdg'
 
 [build]
 
+[mounts]
+  source = "bot_data"
+  destination = "/data"
+
 [[vm]]
   memory = '256mb'
   cpu_kind = 'shared'
