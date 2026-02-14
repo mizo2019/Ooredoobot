@@ -32,7 +32,7 @@ logger.addHandler(console_handler)
 
 # --- DATABASE ---
 def init_db():
-    conn = sqlite3.connect(DB_NAME)
+    conn = sqlite3.connect(DBNAME)
     cursor = conn.cursor()
     cursor.execute('''
         CREATE TABLE IF NOT EXISTS users (
