@@ -531,7 +531,7 @@ async def handle_msg(update: Update, context):
 
 def main():
     init_db()
-    app = Application.builder().token(TELEGRAM_BOT_TOKEN).build()
+    app = Application.builder().token(TELEGRAMBOTTOKEN).build()
     app.add_handler(CommandHandler("start", start))
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_msg))
     app.add_handler(CallbackQueryHandler(claim_gift, pattern="^claim_gift$"))
